@@ -9,6 +9,14 @@ const plugins = [
       ],
       alias
     }
+  ],
+  [
+    require.resolve('babel-plugin-styled-components'),
+    {
+      ssr: true,
+      displayName: true,
+      preProcess: false
+    }
   ]
 ];
 

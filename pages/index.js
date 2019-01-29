@@ -1,8 +1,10 @@
-import Navbar from 'component/navbar'
+import withLayout from 'component/hoc/with-layout'
+import Latest from 'component/activity/latest'
+import History from 'component/activity/history'
 
 const Home = props => <div>
-<Navbar/>
-Home page
-</div>;
+<Latest/>
+<History/>
+</div>
 
-export default Home;
+export default withLayout(Home)
