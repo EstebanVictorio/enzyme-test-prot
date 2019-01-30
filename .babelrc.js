@@ -5,7 +5,8 @@ const plugins = [
     require.resolve('babel-plugin-module-resolver'),
     {
       root: [
-        path.resolve('./component')
+        path.resolve('./component'),
+        path.resolve('./theme'),
       ],
       alias
     }
