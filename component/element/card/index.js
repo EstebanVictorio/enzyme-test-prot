@@ -43,7 +43,7 @@ const CardContent = ({className, size, title, desc }) =>
     <StyledCardDescription size={size} desc={desc}/>
   </div>
 
-const StyledCardContent = styled(CardContent)`${defaultTheme.card.content}`;
+export const StyledCardContent = styled(CardContent)`${defaultTheme.card.content}`;
 
 const Card = ({className, title ='', desc = '', pic = '', size = 'md'}) =>
   <div className={className}>
