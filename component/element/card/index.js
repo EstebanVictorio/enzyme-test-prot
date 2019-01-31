@@ -45,7 +45,7 @@ const CardContent = ({className, size, title, desc }) =>
 
 export const StyledCardContent = styled(CardContent)`${defaultTheme.card.content}`;
 
-const Card = ({className, title ='', desc = '', pic = '', size = 'md'}) =>
+export const Card = ({className, title ='', desc = '', pic = '', size = 'md'}) =>
   <div className={className}>
     <img src={pic} alt="Not found..."/>
     <StyledCardContent size={size} title={title} desc={desc}/>
